@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+					<li><a href="/about.html">About Us</a></li>
+				</ul>
+			</nav>
+			<div>
+				<img src="img/logo.png" class="image">
+			</div>
+			<div>The Office (US) : An American WorkSpace</div>
+		</header>
+		<section id="main">
+      <p>In this sample site, we'll show a list of <a href="https://www.imdb.com/title/tt0386676/">Office Episodes</a>
+        <span>and the ratings </span>about
+        <i>those episodes</i>.</p>
+        <p>Fill out the form to get subscribed to <b>The Office</b>.</p>
+        <form method="POST" class="image form" id="fm" name="fm">
+        	<label for="name">Full Name: </label>
+        	<input type="text" name="fname" id="fname" placeholder="Enter your Name here" />
+        	<br/>
+        	<label for="email">Email: </label>
+        	<input type="email" name="email" id="email" placeholder="Enter your e-mail id here" required />
+        	<br/>
+        	<label for="contact">Contact Number: </label>
+        	<input type="Number" name="contact" id="contact" placeholder="Enter your Contact number">
+        	<br/>
+        	<input type="checkbox" name="like" id="like" checked="true" />
+        	<label for="like">Do you like The Office..?!</label>
+        	<br/>
+        	<label for="like-list">Tell us your Favorite Character: </label>
+        	<input type="text" id="like-list" list="name-data" placeholder="Let us know your favorite Character" required>
+	        <datalist id="name-data">
+				<option value="Micheal Scott"></option>
+				<option value="Dwight Schrute"></option>
+				<option value="Jim Halpert"></option>
+				<option value="Pam Beesly"></option>
+			</datalist>
+			<br/>
+			<input type="button" value="Register" onclick="valid()" />
+			
+        	
+        	
+        </form>
+      <div id="d" style="display: none;">
+        <button onclick="myFunction()">Generate your ID number</button>
+        </div>
+       
+        <div>
+        	<p id="result">
+        		
+        	</p>
+        </div>
+    </section>
+		<footer>
+			&copy; Dunder Mifflin INC.
+			<img src="img/face.jpg" class="image">
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+	
+
+
+</body>
+</html>
